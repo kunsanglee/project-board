@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f8420d8-4ba3-4d87-8b55-21c4179e8753" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/ArticleComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/ArticleComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/ArticleComment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feature/#8-domain",
+    "git-widget-placeholder": "feature/#10-db",
     "last_opened_file_path": "/Users/leekunsin/Desktop/project-board",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Project",
@@ -83,7 +83,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.ProjectBoardApplicationTests">
+  <component name="RunManager" selected="Gradle.JpaRepositoryTest">
+    <configuration name="JpaRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.fastcampus.projectboard.repository.JpaRepositoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="ProjectBoardApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -115,8 +139,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.ProjectBoardApplicationTests" />
+      <item itemvalue="Gradle.JpaRepositoryTest" />
+      <item itemvalue="Spring Boot.ProjectBoardApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JpaRepositoryTest" />
         <item itemvalue="Gradle.ProjectBoardApplicationTests" />
       </list>
     </recent_temporary>
