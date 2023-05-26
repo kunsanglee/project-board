@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f8420d8-4ba3-4d87-8b55-21c4179e8753" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/config/JpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/Article.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/ArticleComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fastcampus/projectboard/domain/ArticleComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
