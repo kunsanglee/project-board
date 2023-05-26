@@ -22,12 +22,11 @@ class ArticleControllerTest {
         this.mvc = mvc;
     }
 
-    @Disabled("구현중")
     @Test
     public void view_GET_게시글_리스트_페이지_정상호출() throws Exception {
         mvc.perform(get("/articles"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("articles/index"))
                 .andExpect(model().attributeExists("articles"));
     }
@@ -37,7 +36,7 @@ class ArticleControllerTest {
     public void view_GET_게시글_상세페이지_정상호출() throws Exception {
         mvc.perform(get("/articles/1"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("articles/detail"))
                 .andExpect(model().attributeExists("article"))
                 .andExpect(model().attributeExists("articleComments"));
@@ -48,7 +47,7 @@ class ArticleControllerTest {
     public void view_GET_게시글_검색_페이지_정상호출() throws Exception {
         mvc.perform(get("/articles/search"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("articles/search"));
     }
 
@@ -57,7 +56,7 @@ class ArticleControllerTest {
     public void view_GET_게시글_해시태그_검색_페이지_정상호출() throws Exception {
         mvc.perform(get("/articles/search-hashtag"))
                 .andExpect(status().isOk())
-                .andExpect(content().contentType(MediaType.TEXT_HTML))
+                .andExpect(content().contentTypeCompatibleWith(MediaType.TEXT_HTML))
                 .andExpect(view().name("articles/search-hashtag"));
     }
 }
