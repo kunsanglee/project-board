@@ -1,7 +1,9 @@
 package com.fastcampus.projectboard.config;
 
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.ConstructorBinding;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
@@ -20,7 +22,9 @@ public class ThymeleafConfig {
     }
 
 
+    @RequiredArgsConstructor
     @Getter
+    @ConstructorBinding
     @ConfigurationProperties("spring.thymeleaf3")
     public static class Thymeleaf3Properties {
         /**
@@ -28,9 +32,6 @@ public class ThymeleafConfig {
          */
         private final boolean decoupledLogic;
 
-        public Thymeleaf3Properties(boolean decoupledLogic) {
-            this.decoupledLogic = decoupledLogic;
-        }
     }
 
 }
